@@ -1,0 +1,353 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+html {
+	background-color: black;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: white;
+	font-size: 24px;
+}
+
+header {
+	width: 100%;
+	background-color: black;
+	border-bottom: 1px solid whitesmoke;
+}
+
+div.logo {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+header img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 70px;
+}
+
+
+header ul li {
+	display: inline-block;
+	height: 70px;
+	margin: 0 10px 0;
+	
+}
+
+header ul li:last-child {
+	margin-right: 0;
+}
+
+header ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+}
+
+header ul li a:hover {
+	color: darkgrey;
+}
+
+div.slide {
+	background-color: black;
+	border: 20px solid black;
+}
+
+ul.your-class {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+ul.your-class img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+ul.your-class li {
+	width: 300px;
+	height: 250px;
+	margin: 0 5px 0;
+}
+
+/*.slick-current {
+	transform: scale(1.1);
+	transition: transform .5s;
+}*/
+
+ul.nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul.nav li {
+	position: relative;
+	display: inline-block;
+	width: 32%;
+	height: 220px;
+	margin: 0 2% 2% 0;
+	border:  2px solid black;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+ul.nav li:nth-child(3),
+ul.nav li:nth-child(6) {
+	margin-right: 0;
+}
+
+ul.nav li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+ul.nav li div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50%);
+	opacity: 0.5;
+	background-color: black;
+}
+
+ul.nav li div:hover {
+	border: 1px solid white;
+	opacity: 0.7;
+}
+
+ul.nav li div h2 {
+	color: white;
+	margin: 0 0 10px;
+}
+
+ul.nav li div a {
+	text-decoration: none;
+	color: red;
+	text-transform: uppercase;
+}
+
+main {
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+hr {
+	margin: 30px;
+}
+
+ul.blocks {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ul.blocks h2 {
+	margin-bottom: 0;
+}
+
+ul.blocks h2, p {
+	color: white;
+}
+
+li.list {
+	display: inline-block;
+	width: calc(100% / 4);
+	vertical-align: top;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 5px;
+}
+
+li.list:last-child {
+	margin-right: 0;
+}
+
+li.list li {
+	list-style: none;
+	text-align: center;
+}
+
+li.list img {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+div.our_works img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.our_works ul {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.our_works ul li {
+	width: 250px;
+	height: 200px;
+	display: inline-block;
+	list-style: none;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+div.our_works ul li a {
+	overflow: hidden;
+	height: 100%;
+}
+
+footer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+footer h2, h3, span {
+	color: white;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer ul.blog {
+	display: inline-block;
+	width: calc((100% / 4 - 10px) - (10px / 4));
+	margin: 0 10px 0 0;
+	vertical-align: top; 
+}
+
+footer ul.blog:last-child {
+	margin-right: 0;
+}
+
+footer ul.blog li {
+	list-style: none;
+}
+
+div.bottom {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+div.bottom p {
+	color: grey;
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+#top img {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+}
+
+
+@media only screen and (max-width : 768px){
+
+	body {
+		padding: 0 5px 0;
+	}
+
+	header ul li{
+		font-size: 12px;
+	}
+
+	header img {
+	width: 100px;
+	}
+
+
+	ul.your-class li {
+	width: 200px;
+	height: 120px;
+	margin: 0 5px 0;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width : 480px){
+
+	body {
+		padding: 0 5px 0;
+	}
+
+	header ul li{
+		font-size: 10px;
+	}
+
+	div.logo {
+		text-align: center;
+	}
+
+	header img {
+	display: none;
+	}
+
+	div.our_works ul li {
+	width: 100%;
+	height: 150px;
+	display: inline-block;
+	list-style: none;
+	box-sizing: border-box;
+	vertical-align: middle;
+	padding: 0 5px 2px;
+	}
+
+	p {
+		font-size: 10px;
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+}
+
+
